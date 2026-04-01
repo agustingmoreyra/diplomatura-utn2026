@@ -1,0 +1,117 @@
+body {
+  background-color: black;
+  color: antiquewhite;
+  font-family: Arial;
+  text-align: center;
+}
+
+h1 {
+  color: brown;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: brown;
+}
+
+.container p {
+  color: white;
+}
+
+.card {
+  background-color: #111;
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(243, 2, 2, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.10);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+span {
+  color: brown;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  color: white;
+}
+.card-form {
+    background-color: #111;
+  padding: 20px;
+  margin: 15px;
+  width: 150px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(243, 2, 2, 0.1);
+  transition: 0.3s;
+  
+
+}
+input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(243, 159, 2);
+}
+
+table {
+  margin-left: 0px ;
+  border-collapse: collapse;
+  margin-top: 20px;
+  display: block
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+th {
+  color: brown;
+}
+.form-train {
+    display: inline-block;
+
+}
+
+.form-train {
+    display: flex;              /*   poner en fila */
+    justify-content: space-between; /* uno en izquierda y otro derecha */
+    align-items: flex-start;    /* alineación arriba */
+    gap: 40px;}
+.card-form {
+    width: 300px;
+}
+

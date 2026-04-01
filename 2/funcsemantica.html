@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase bloque   </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1> guia interativa: estructurta atributos y tablas     </h1> 
+    <p> este doc no tiene css todo el diseño y las posciones son nativas del navegador</p>
+    
+    <nav>
+<ul>
+    <li>  <a href="#bloque"> elementos en bloque </a>  </li>
+    <li>  <a href="#linea"> elementos en linea </a>  </li>
+    <li>  <a href="#tablas"> estructura de tablas </a>  </li>
+</ul>
+    </nav>
+    <hr>
+    </header>
+
+    <main>
+ <section id="bloque" >
+<h2> Elementos en bloque</h2>
+<p> <strong> Regla de oro: </strong> Estos elementos siempre empiezan en linea y ocupan el 100% </p>
+ <div style="background-color: gray;">
+ soy un div
+ </div>
+ <p>
+    soy un parrafo, agrupo texto y dejo margen ariba  y abajo</p>
+    <blockquote>
+        soy un blockquote se usa para citas textuales y suelo tener un margen lateral por defecto
+    </blockquote>
+    <h3> jerarquias de titulos (Encabezados herading )</h3>
+    <h4>titulo nivel 4</h4>
+    <h5> titulo nivel 5</h5>
+    <h6>titulo nivel 6</h6>
+    <ul>
+        <li>  yo soy un li - item lista  </li>
+        <li>tambien soy un elemento en bloque</li>
+    </ul>
+
+ </section>
+
+ <section id="linea">
+    <h2> Elemento en linea (inline)</h2>
+    <p> <strong> Regla de oro</strong> estos elementos solo ocupan el ancho necesario para su contenidoy no generan salto wen linea </p>
+    <p>
+        Dentro de este parrado en bloque tengo un <span style="color: blueviolet;"> span que es un contenesdor de linea </span> Tambien puedo usar <strong>strong para negrita </strong> y <em> em para cursiva </em> <i> ademas tenemos la etiqueta i </i> todfo fluye en el mismo renglon.
+    </p>
+<p>
+
+ademas tenemos los enlaces que tambien son etiquetas en linea</p>
+<a href="https://www.google.com " target="_blank" title="busca cualquier cosa" > google</a>
+<p>las imagenes tmb son elementos en linea</p>
+
+<img src="https://rougeb2car.vtexassets.com/arquivos/ids/228509-500-auto?v=638743817613930000&width=500&height=auto&aspect=true" alt="perfume rabioso " style="width: 30%;">
+
+<img src="https://rougeb2car.vtexassets.com/arquivos/ids/228509-500-auto?v=638743817613930000&width=500&height=auto&aspect=true" alt="perfume rabioso " style="width: 30%;">
+
+<img src="https://rougeb2car.vtexassets.com/arquivos/ids/228509-500-auto?v=638743817613930000&width=500&height=auto&aspect=true" alt="perfume rabioso " style="width: 30%;">
+
+
+<div>
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/perfumes-vainilla-6459484490104.jpg?crop=1xw:0.8425704014379868xh;0,0.139xh"
+            alt="Perfume en la arena"
+            style="width: 30%"
+          />
+        </div>
+
+
+
+<p> etiquetas pequeñas <small>yo soy un texo pequeño </small></p>
+ </section>
+ <hr>
+<section id="tablas">
+    <h2> representacion de datos</h2>
+    <p>las tablas se usan para datos estructurados, no para diseño </p>
+    <table border="1%">
+        <thead>
+            <tr>
+            <th>DNI</th>
+            <th>Nombre del estudiante</th>
+            <th>Tema dominado</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>442222222</td>
+            <td> Juan Perez </td>
+            <td>Fisica cuantica</td>
+            </tr>
+            <tr>
+            <td>452222222</td>
+            <td>Ana Garcia</td>
+            <td>Artes marciales mixtas</td>
+            </tr>
+            <tr>
+            <td>472222222</td>
+            <td>Carlos Ruiz</td>
+            <td>  Piloto de B2</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<form action="#" method="get">
+        <div>
+          <!-- El label del input debe ser igual al name del input -->
+          <label for="nombre"> Nombre: </label>
+          <input type="text" name="nombre" />
+        </div>
+
+        <div>
+          <label for="contraseña">Contraseña: </label>
+          <input type="password" name="contraseña" />
+        </div>
+
+        <div>
+          <label for="email"> Email: </label>
+          <input type="email" name="email" />
+        </div>
+
+        <div>
+          <label for="edad"> Edad: </label>
+          <input type="number" />
+        </div>
+
+        <div>
+          <label for="fecha-nacimiento"> Fecha nacimiento </label>
+          <input type="date" />
+        </div>
+
+        <div>
+          <label for="color-favorito"> Color Favorito </label>
+          <input type="color" />
+        </div>
+
+        <p>Género:</p>
+        <!-- En radio el name debe ser igual en todas las opciones, solo permite una opcion elegida -->
+        <input type="radio" id="g-masc" name="genero" value="m" />
+        <label for="g-masc">Masculino</label>
+        <input type="radio" id="g-fem" name="genero" value="f" />
+        <label for="g-fem">Femenino</label>
+
+        <p>
+          <label for="usr-opt">Nivel de Estudio:</label>
+          <select id="usr-opt" name="nivel">
+            <option value="pri">Primario</option>
+            <option value="sec">Secundario</option>
+            <option value="uni" selected>Universitario</option>
+          </select>
+        </p>
+
+        <p>Preferencias:</p>
+        <input type="checkbox" id="pref-html" name="interes" value="html" />
+        <label for="pref-html">Amo HTML</label> <br />
+        <input type="checkbox" id="pref-css" name="interes" value="css" />
+        <label for="pref-css">Quiero ver CSS</label>
+
+        <p>
+          <label for="usr-msg">Mensaje Corto:</label> <br />
+          <textarea
+            id="usr-msg"
+            name="mensaje"
+            rows="4"
+            cols="30"
+            placeholder="Déjanos tu mensaje..."
+          ></textarea>
+        </p>
+      </form>
+
+      <footer>
+        <p>Guia de clase - frontend basico</p>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+</html>

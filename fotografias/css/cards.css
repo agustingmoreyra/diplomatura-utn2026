@@ -1,0 +1,162 @@
+/* =============================================
+   cards.css — Sección Servicios / Cards
+   LUMINA Fotografía
+   ============================================= */
+
+/* ---------- Sección ---------- */
+.section-cards {
+  background: var(--clr-light);
+  padding: var(--space-xl) 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Grid de cards ---------- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* ---------- Card individual ---------- */
+.card {
+  background: var(--clr-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--trans-med), box-shadow var(--trans-med);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Imagen de la card */
+.card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.07);
+}
+
+/* Badge sobre la imagen */
+.card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* Cuerpo de la card */
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.6rem;
+}
+
+.card-category {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--clr-dark);
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: var(--clr-muted);
+  line-height: 1.65;
+  flex: 1;
+}
+
+/* Botón dentro de la card */
+.btn-card {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.3rem;
+  background: transparent;
+  border: 1.5px solid var(--clr-dark-3);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--clr-dark);
+  text-align: center;
+  transition: all var(--trans-fast);
+}
+
+.btn-card:hover {
+  background: var(--clr-dark);
+  color: var(--clr-white);
+  border-color: var(--clr-dark);
+}
+
+/* =============================================
+   RESPONSIVE — Cards
+   ============================================= */
+
+/* 1024px: 2 columnas */
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet 768px: 1 columna */
+@media (max-width: 768px) {
+  .section-cards {
+    min-height: auto;
+    padding: var(--space-lg) 0;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile 360px */
+@media (max-width: 420px) {
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}

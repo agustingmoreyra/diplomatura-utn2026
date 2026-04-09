@@ -1,0 +1,21 @@
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+  background: #111;
+
+}
+
+.item {
+  
+  background: #00c3ff;
+  padding: 30px;/*espacio interno tamaño de la caja*/
+  text-align: center; /*alineacion del texto*/
+  border-radius: 30px;/*borde del cuadrado */
+  margin: 10px; /* separa elemetos*/
+ 
+}
+body{
+  background-color: #111;
+}

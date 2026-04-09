@@ -1,0 +1,179 @@
+/* =============================================
+   home.css — Sección Hero / Home
+   LUMINA Fotografía
+   ============================================= */
+
+/* ---------- Sección principal ---------- */
+.section-home {
+  position: relative;
+  width: 100%;
+  /* Mínimo ⅓ de pantalla de alto; en la práctica 100vh */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ---------- Imagen de fondo hero ---------- */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-img {
+  /* La imagen ocupa el 80%+ del ancho y ⅓+ del alto */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* Sutil efecto de zoom al cargar */
+  animation: heroZoom 14s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+
+/* Overlay degradado oscuro para legibilidad */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+/* ---------- Contenido hero ---------- */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--clr-white);
+  max-width: 780px;
+  padding: var(--space-xl) var(--space-md);
+  /* Animación de entrada */
+  animation: heroFadeUp 1s ease 0.3s both;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Etiqueta pequeña sobre el título */
+.hero-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--clr-accent);
+  padding: 4px 14px;
+  border-radius: 2px;
+}
+
+/* Título principal */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--clr-accent);
+}
+
+/* Subtítulo */
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.5rem;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* Botones CTA */
+.hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+/* ---------- Indicador de scroll ---------- */
+.hero-scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: rgba(255,255,255,0.5);
+  font-size: 1.3rem;
+  animation: bounce 2.4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.5; }
+  50%       { transform: translateX(-50%) translateY(8px); opacity: 1; }
+}
+
+/* =============================================
+   RESPONSIVE — Home
+   ============================================= */
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(2.2rem, 8vw, 3.2rem);
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}
+
+/* Mobile: 360px */
+@media (max-width: 420px) {
+  .hero-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+}

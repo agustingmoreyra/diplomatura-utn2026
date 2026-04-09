@@ -4,8 +4,30 @@ body {
   font-family: Arial;
   text-align: center;
 }
-
+body {
+  font-family: "Roboto", sans-serif;
+}
 h1 {
+  color: brown;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
   color: brown;
 }
 
@@ -31,7 +53,7 @@ h1 {
 }
 
 .card:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 .card img {
@@ -54,15 +76,13 @@ li {
   color: white;
 }
 .card-form {
-    background-color: #111;
+  background-color: #111;
   padding: 20px;
   margin: 15px;
   width: 150px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(243, 2, 2, 0.1);
   transition: 0.3s;
-  
-
 }
 input {
   width: 90%;
@@ -86,10 +106,10 @@ button:hover {
 }
 
 table {
-  margin-left: 0px ;
+  margin-left: 0px;
   border-collapse: collapse;
   margin-top: 20px;
-  display: block
+  display: block;
 }
 
 th,
@@ -102,16 +122,15 @@ th {
   color: brown;
 }
 .form-train {
-    display: inline-block;
-
+  display: inline-block;
 }
 
 .form-train {
-    display: flex;              /*   poner en fila */
-    justify-content: space-between; /* uno en izquierda y otro derecha */
-    align-items: flex-start;    /* alineación arriba */
-    gap: 40px;}
-.card-form {
-    width: 300px;
+  display: flex; /*   poner en fila */
+  justify-content: space-between; /* uno en izquierda y otro derecha */
+  align-items: flex-start; /* alineación arriba */
+  gap: 40px;
 }
-
+.card-form {
+  width: 300px;
+}

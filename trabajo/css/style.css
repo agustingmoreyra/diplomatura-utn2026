@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #7c7c7c67;
+  color: #a6ff00;
+}
+.menu {
+  position: absolute;
+  left: 75%;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh; /* foto ocupa toda la pantalla */
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.hero img {
+  width: 85%;
+  height: 100%;
+  object-fit: cover; /* recorta sin deformar */
+  display: block;
+}
+.menu a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.menu a:hover {
+  color: #a6ff00;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url("../img/gym-bg.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px;
+}
+.card {
+  background-color: #000000f8;
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(110, 243, 2);
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* GALERÍA */
+.galeria {
+  display: grid;
+  padding: 60px;
+  height: 100vh;
+  align-content: space-evenly;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+
+.grid img {
+  width: 80%;
+  height: 150px;
+  object-fit: cover;
+}
+/* DISCLAIMER */
+.disclaimer {
+  padding: 40px 60px;
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.disclaimer strong {
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+/* PLANES */
+.planes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+  height: 100vh;
+}
+
+.card {
+  width: 250px;
+  background: #030303;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  border: #a6ff00;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* CONTACTO */
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ESTE es el correcto, no align-self */
+  padding: 50px;
+  text-align: center;
+  min-height: 70vh;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 15px;
+}
+
+/* INPUTS */
+.contacto input,
+.contacto textarea,
+.contacto select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* BOTONES */
+.contacto button {
+  padding: 10px;
+  background: #a6ff00;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}

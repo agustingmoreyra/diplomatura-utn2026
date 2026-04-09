@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tienda iPhone</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container nav-container">
+          <div class="logo">Mirko iPhone</div>
+          <ul class="nav-menu">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <img
+          src="../img/principal.jpg"
+          alt="iPhone destacado"
+          class="hero-image"
+        />
+        <div class="hero-text">
+          <h1>El iPhone que mereces</h1>
+          <p>La innovación y diseño al alcance de tus manos</p>
+          <button class="btn btn-primary">Comprar ahora</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="productos-section">
+      <div class="container">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="productos-grid">
+          <!-- Tarjeta producto 1 -->
+          <div class="producto-card">
+            <img
+              src="../img/13p.jpg"
+              alt="iPhone 14 Pro"
+              class="producto-img"
+            />
+            <h3>iPhone 14 Pro</h3>
+            <p class="precio">$999</p>
+            <button class="btn btn-secondary">Comprar</button>
+          </div>
+
+          <!-- Tarjeta producto 2 -->
+          <div class="producto-card">
+            <img src="../img/14n.png" alt="iPhone 14" class="producto-img" />
+            <h3>iPhone 14</h3>
+            <p class="precio">$799</p>
+            <button class="btn btn-secondary">Comprar</button>
+          </div>
+
+          <!-- Tarjeta producto 3 -->
+          <div class="producto-card">
+            <img src="../img/13.png" alt="iPhone 13" class="producto-img" />
+            <h3>iPhone 13</h3>
+            <p class="precio">$699</p>
+            <button class="btn btn-secondary">Comprar</button>
+          </div>
+
+          <!-- Tarjeta producto 4 -->
+          <div class="producto-card">
+            <img src="../img/12p.jpg" alt="iPhone SE" class="producto-img" />
+            <h3>iPhone 12 pro</h3>
+            <p class="precio">$399</p>
+            <button class="btn btn-secondary">Comprar</button>
+          </div>
+
+          <!-- Tarjeta producto 5 -->
+          <div class="producto-card">
+            <img src="../img/12p.jpg" alt="iPhone 12" class="producto-img" />
+            <h3>iPhone 12</h3>
+            <p class="precio">$599</p>
+            <button class="btn btn-secondary">Comprar</button>
+          </div>
+
+          <!-- Tarjeta producto 6 -->
+          <div class="producto-card">
+            <img src="../img/17.jpg" alt="iPhone 11" class="producto-img" />
+            <h3>iPhone 17 pro max</h3>
+            <p class="precio">$499</p>
+            <button class="btn btn-secondary">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Ofertas -->
+    <section id="ofertas" class="ofertas-section">
+      <div class="container">
+        <h2 class="section-title">Ofertas Destacadas</h2>
+        <div class="ofertas-content">
+          <div class="oferta-card">
+            <h3>Descuento Especial iPhone 14 Pro</h3>
+            <p>Compra ahora y obtén un 15% de descuento más envío gratis.</p>
+          </div>
+          <div class="oferta-card">
+            <h3>Promoción iPhone SE</h3>
+            <p>Llévate un cargador inalámbrico GRATIS con tu compra.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Beneficios -->
+    <section class="beneficios-section">
+      <div class="container beneficios-grid">
+        <div class="beneficio">
+          <h4>Envíos Rápidos</h4>
+          <p>Entrega en 24-48 horas en todo el país.</p>
+        </div>
+        <div class="beneficio">
+          <h4>Garantía Oficial</h4>
+          <p>12 meses de garantía respaldada por Apple.</p>
+        </div>
+        <div class="beneficio">
+          <h4>Calidad Premium</h4>
+          <p>Productos certificados y originales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario contacto -->
+    <section id="contacto" class="contacto-section">
+      <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <form class="contact-form">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tuemail@ejemplo.com"
+            required
+          />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            placeholder="Escribe tu mensaje"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2024 Tienda iPhone. Todos los derechos reservados.</p>
+        <p>Contacto: info@tiendaiPhone.com | Tel: +54 9 11 1234-5678</p>
+      </div>
+    </footer>
+
+    <script>
+      // Código para evitar envío real de formulario para demo
+      const form = document.querySelector(".contact-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Gracias por contactarnos. Te responderemos pronto.");
+        form.reset();
+      });
+    </script>
+  </body>
+</html>

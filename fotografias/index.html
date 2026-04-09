@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Viewport para diseño responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMINA — Fotografía de Autor</title>
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/galeria.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+
+<body>
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#home" class="nav-logo">LUMINA</a>
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <!-- Botón hamburguesa (responsive) -->
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="bi bi-list"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== SECCIÓN 1: HOME ========== -->
+    <section id="home" class="section-home">
+      <!-- Imagen hero con overlay -->
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80"
+          alt="Fotografía de paisaje montañoso al amanecer"
+          class="hero-img"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Contenido hero -->
+      <div class="hero-content">
+        <span class="hero-tag">Fotografía de Autor · Buenos Aires</span>
+        <h1 class="hero-title">
+          La luz que <em>cuenta</em><br />tu historia
+        </h1>
+        <p class="hero-subtitle">
+          Capturamos momentos únicos con una mirada artística que trasciende lo ordinario.
+        </p>
+        <div class="hero-cta">
+          <a href="#servicios" class="btn btn-primary">Ver servicios</a>
+          <a href="#galeria" class="btn btn-outline">
+            <i class="bi bi-images"></i> Ver galería
+          </a>
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="hero-scroll">
+        <i class="bi bi-chevron-double-down"></i>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN 2: CARDS / SERVICIOS ========== -->
+    <section id="servicios" class="section-cards">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Lo que hacemos</span>
+          <h2 class="section-title">Nuestros servicios</h2>
+          <p class="section-desc">
+            Cada sesión es una colaboración entre nuestra visión técnica
+            y la esencia de lo que querés contar.
+          </p>
+        </div>
+
+        <!-- Grid de cards -->
+        <div class="cards-grid">
+
+          <!-- Card 1 -->
+          <article class="card" id="card-retratos">
+            <div class="card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80"
+                alt="Retrato artístico en blanco y negro"
+                class="card-img"
+              />
+              <span class="card-badge">Popular</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">
+                <i class="bi bi-person-bounding-box"></i> Retratos
+              </span>
+              <h3 class="card-title">Retratos de autor</h3>
+              <p class="card-text">
+                Sesiones individuales o grupales en locación o estudio.
+                Captamos tu personalidad con una iluminación cuidada y dirección creativa.
+              </p>
+              <a href="#contacto" class="btn btn-card">Reservar sesión</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" id="card-bodas">
+            <div class="card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80"
+                alt="Fotografía de boda en exterior"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-category">
+                <i class="bi bi-heart"></i> Bodas
+              </span>
+              <h3 class="card-title">Cobertura de bodas</h3>
+              <p class="card-text">
+                Documentamos cada detalle de tu gran día. Desde los preparativos
+                hasta el último baile, con estilo documental y un toque editorial.
+              </p>
+              <a href="#contacto" class="btn btn-card">Consultar precio</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" id="card-comercial">
+            <div class="card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80"
+                alt="Fotografía comercial de producto"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-category">
+                <i class="bi bi-bag"></i> Comercial
+              </span>
+              <h3 class="card-title">Fotografía comercial</h3>
+              <p class="card-text">
+                Productos, marcas y espacios. Imágenes que comunican el valor
+                de tu negocio y conectan con tu audiencia.
+              </p>
+              <a href="#contacto" class="btn btn-card">Solicitar cotización</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card" id="card-paisaje">
+            <div class="card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80"
+                alt="Fotografía de paisaje natural"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-category">
+                <i class="bi bi-geo-alt"></i> Paisaje
+              </span>
+              <h3 class="card-title">Fotografía de paisaje</h3>
+              <p class="card-text">
+                Expediciones fotográficas a destinos naturales. Impresiones
+                de gran formato disponibles para coleccionistas y decoración.
+              </p>
+              <a href="#contacto" class="btn btn-card">Ver paquetes</a>
+            </div>
+          </article>
+
+        </div><!-- /cards-grid -->
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN 3: GALERÍA ========== -->
+    <section id="galeria" class="section-galeria">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <span class="section-tag section-tag--light">Portfolio</span>
+          <h2 class="section-title section-title--light">Galería de trabajos</h2>
+        </div>
+
+        <!-- Grid de galería (mínimo 7 imágenes) -->
+        <div class="galeria-grid">
+          <figure class="galeria-item galeria-item--wide">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Cascada en bosque verde" />
+            <figcaption>Paisaje Natural</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80" alt="Retrato artístico" />
+            <figcaption>Retrato</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80" alt="Boda en exterior" />
+            <figcaption>Boda</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&q=80" alt="Viaje y aventura" />
+            <figcaption>Viaje</figcaption>
+          </figure>
+          <figure class="galeria-item galeria-item--tall">
+            <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?w=400&q=80" alt="Fotografía urbana" />
+            <figcaption>Urbana</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80" alt="Producto comercial" />
+            <figcaption>Comercial</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80" alt="Montaña al amanecer" />
+            <figcaption>Amanecer</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80" alt="Bosque místico" />
+            <figcaption>Naturaleza</figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN 4: CONTACTO ========== -->
+    <section id="contacto" class="section-contacto">
+      <div class="container">
+        <div class="contacto-layout">
+
+          <!-- Info lateral -->
+          <div class="contacto-info">
+            <span class="section-tag">Hablemos</span>
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="contacto-desc">
+              ¿Tenés un proyecto en mente? Completá el formulario
+              y te respondemos dentro de las 24 horas.
+            </p>
+            <ul class="contacto-datos">
+              <li>
+                <i class="bi bi-envelope-fill"></i>
+                <span>hola@luminafoto.com</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill"></i>
+                <span>+54 11 4567-8910</span>
+              </li>
+              <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Palermo, Buenos Aires</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Formulario de contacto -->
+          <div class="contacto-form-wrap">
+            <form class="contacto-form" id="form-contacto" novalidate>
+
+              <!-- Nombre -->
+              <div class="form-group">
+                <label for="nombre">Nombre completo <span class="required">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana García" required />
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Correo electrónico <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+              </div>
+
+              <!-- Teléfono -->
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+54 11 0000-0000" />
+              </div>
+
+              <!-- Selector de servicio -->
+              <div class="form-group">
+                <label for="servicio">Servicio de interés <span class="required">*</span></label>
+                <select id="servicio" name="servicio" required>
+                  <option value="" disabled selected>Seleccioná un servicio</option>
+                  <option value="retratos">Retratos de autor</option>
+                  <option value="bodas">Cobertura de bodas</option>
+                  <option value="comercial">Fotografía comercial</option>
+                  <option value="paisaje">Fotografía de paisaje</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <!-- Radio: cómo nos conociste -->
+              <div class="form-group">
+                <label class="label-group">¿Cómo nos conociste?</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="origen" value="instagram" />
+                    <span>Instagram</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="origen" value="recomendacion" />
+                    <span>Recomendación</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="origen" value="google" />
+                    <span>Google</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="origen" value="otro" />
+                    <span>Otro</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Checkbox: disponibilidad -->
+              <div class="form-group">
+                <label class="label-group">Disponibilidad preferida</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="disponibilidad" value="semana" />
+                    <span>Días de semana</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="disponibilidad" value="finde" />
+                    <span>Fines de semana</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="disponibilidad" value="flexible" />
+                    <span>Soy flexible</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Comentario / mensaje -->
+              <div class="form-group form-group--full">
+                <label for="mensaje">Tu mensaje <span class="required">*</span></label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos sobre tu proyecto, fecha estimada, locación, etc." required></textarea>
+              </div>
+
+              <!-- Botones -->
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="bi bi-send"></i> Enviar mensaje
+                </button>
+                <button type="reset" class="btn btn-outline">
+                  <i class="bi bi-arrow-counterclockwise"></i> Limpiar
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div><!-- /contacto-layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">LUMINA</span>
+        <p>Fotografía de autor en Buenos Aires.<br />Cada imagen, una historia.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación del pie">
+        <a href="#home">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2025 LUMINA Fotografía. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JS para menú hamburguesa y navbar scroll -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

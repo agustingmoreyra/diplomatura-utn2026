@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: floralwhite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: black;
+    padding: 1rem 2rem
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 100px;
+}
+header nav ul{
+    gap: 1.5rem;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+   
+}
+.carousel-item img{
+    height: 86vh;
+}
+
+.carousel-caption {
+    BACKGROUND-COLOR: rgba(0.1, 0.1, 0.1, 0.5);
+}
+.reasons-section {
+    max-width : 1200px;
+     margin: 3rem auto;
+    text-align: center;
+}
+.reasons-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    }

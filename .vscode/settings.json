@@ -1,6 +1,6 @@
 {
     "emmet.triggerExpansionOnTab": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 11,
     "workbench.colorTheme": "Dracula Theme",
     "liveServer.settings.port": 5501
 }

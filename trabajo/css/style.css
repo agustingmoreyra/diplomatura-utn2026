@@ -5,39 +5,25 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  background-color: #0a0a0a;
-  color: white;
+  font-family: "Inter", sans-serif; /*letra*/
+  background-color: #0a0a0a; /*color fondo*/
+  color: white; /* color letra */
 }
 /* NAV */
 .nav {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* en fila */
+  justify-content: space-between; /*uno en cada punta*/
   padding: 20px 60px;
   position: fixed;
   top: 0px;
   width: 100%;
-  background: #7c7c7c67;
+  background: #794fc9d5;
   color: #a6ff00;
 }
 .menu {
   position: absolute;
   left: 75%;
   width: 100%;
-}
-
-.hero {
-  width: 100%;
-  height: 100vh; /* foto ocupa toda la pantalla */
-  overflow: hidden;
-  margin-top: 70px;
-}
-
-.hero img {
-  width: 85%;
-  height: 100%;
-  object-fit: cover; /* recorta sin deformar */
-  display: block;
 }
 .menu a {
   margin-left: 40px;
@@ -46,23 +32,30 @@ body {
 }
 
 .menu a:hover {
-  color: #a6ff00;
+  color: #a6ff00;/*color al pasar el mouse*/
 }
 
 /* HERO */
 .hero {
-  height: 80vh;
+  height: 90vh;
   background: url("../img/gym-bg.jpg") center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 100px;
+  margin-top: 60px;
 }
-
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* recorta sin deformar */
+  display: block;
+}
 .hero h1 {
-  font-size: 50px;
+  font-size: 60px;
+  color: #a6ff00;
+  text-shadow: 0 0 15px #a6ff00;
 }
-
 .hero p {
   margin-top: 10px;
   color: #ccc;
@@ -97,10 +90,10 @@ body {
 
 /* GALERÍA */
 .galeria {
-  display: grid;
+  
   padding: 60px;
   height: 100vh;
-  align-content: space-evenly;
+  align-content: space-evenly; /*separada con mismo espacio  */
 }
 
 .grid {
@@ -167,9 +160,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; /* ESTE es el correcto, no align-self */
-  padding: 50px;
+  padding: 30px;
   text-align: center;
-  min-height: 70vh;
+  min-height: 40vh;
 }
 
 /* FORM */
